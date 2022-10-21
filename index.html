@@ -23,205 +23,125 @@
       <section class="nav">
         <!-- Later on, the following links need a different design and the nested lists should be foldable like a dropdown  -->
         <nav>
-          <h3>Categories</h3>
-          <ul>
-            <li><a href="#sandbox">Sandbox</a></li>
-            <ul class="nested">
-              <li><a href="#minecraft">Minecraft</a></li>
-              <li><a href="#gtav">Grand Theft Auto 5</a></li>
-              <li><a href="#scrapmechanic">Scrap Mechanic</a></li>
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>What is what?</li></a>
+              <a href="#"><li>Blog</li></a>
+              <a href="#"><li>Contact</li></a>
             </ul>
-            <li><a href="#jumpnrun">Jump'n'Run</a></li>
-            <ul class="nested">
-              <li>
-                <a href="#donkeykong">Donkey Kong Country: Tropical Freeze</a>
-              </li>
-              <li><a href="#ratchet">Ratchet & Clank</a></li>
-              <li><a href="#meatboy">Super Meat Boy</a></li>
-            </ul>
-            <li><a href="#rts">RTS</a></li>
-            <ul class="nested">
-              <li><a href="#dota2">DOTA 2</a></li>
-              <li><a href="#warhammer3">Warhammer III</a></li>
-              <li><a href="#aoe2">Age of Empires II</a></li>
-            </ul>
-            <!-- not finished yet from here to (see below)-->
-            <li><a href="#shooter">Shooter</a></li>
-            <ul class="nested">
-              <li>--</li>
-              <li>--</li>
-              <li>--</li>
-            </ul>
-            <li><a href="#simulation">Simulation</a></li>
-            <ul class="nested">
-              <li>--</li>
-              <li>--</li>
-              <li>--</li>
-            </ul>
-            <li><a href="#puzzle">Puzzle</a></li>
-            <ul class="nested">
-              <li>--</li>
-              <li>--</li>
-              <li>--</li>
-            </ul>
-            <!-- here -->
-          </ul>
+          </div>
         </nav>
+        <!-- here -------------------------------------------------------------->
       </section>
-      <section>
-        <div clas="subheader">
+      <section clas="dropdown--main">
+        <section class="subheader">
           <h3>What is what?</h3>
-        </div>
+        </section>
         <section id="sandbox" class="sandbox">
-          <h4>Sandbox</h4>
-          <p>
-            A <strong>sandbox</strong> game is a video game with a gameplay
-            element that provides the player a great degree of creativity to
-            interact with, usually without any predetermined goal, or
-            alternatively with a goal that the player sets for themselves. Such
-            games may lack any objective, and are sometimes referred to as
-            non-games or software toys. More often, sandbox games result from
-            these creative elements being incorporated into other genres and
-            allowing for emergent gameplay. Sandbox games are often associated
-            with an open world concept which gives the player freedom of
-            movement and progression in the game's world. The term "sandbox"
-            derives from the nature of a sandbox that lets children create
-            nearly anything they want within it.
-          </p>
-          <h5>Most popular "Sandbox" games:</h5>
-          <section id="minecraft">
-            <figure>
-              <figcaption>
-                <h5>Minecraft</h5>
-              </figcaption>
-              <img
-                src="https://www.pcgamesn.com/wp-content/uploads/2018/06/Minecraft-PE-seeds-header-900x507.jpg"
-                alt="minecraft"
-              />
-            </figure>
-          </section>
-          <section id="gtav">
-            <figure>
-              <figcaption>
-                <h5>Grand Theft Auto 5 [18+]</h5>
-              </figcaption>
-              <img
-                src="https://www.pcgamesn.com/wp-content/uploads/2018/07/Sandbox-games-Grand-Theft-Auto-V-900x507.jpg"
-                alt="GTAV"
-              />
-            </figure>
-          </section>
-          <section id="scrapmechanic">
-            <figure>
-              <figcaption>
-                <h5>Scrap Mechanic</h5>
-              </figcaption>
-              <img
-                src="https://www.pcgamesn.com/wp-content/uploads/2018/07/Sandbox-games-Scrap-Mechanic-900x507.jpg"
-                alt="scrapmechanic"
-              />
-            </figure>
-          </section>
+          <button type="button" class="collapsible">
+            <strong>SANDBOX</strong>
+          </button>
+          <div class="content">
+            <p>
+              A <strong>sandbox</strong> game is a video game with a gameplay
+              element that provides the player a great degree of creativity to
+              interact with, usually without any predetermined goal, or
+              alternatively with a goal that the player sets for themselves.
+              Such games may lack any objective, and are sometimes referred to
+              as non-games or software toys. More often, sandbox games result
+              from these creative elements being incorporated into other genres
+              and allowing for emergent gameplay. Sandbox games are often
+              associated with an open world concept which gives the player
+              freedom of movement and progression in the game's world. The term
+              "sandbox" derives from the nature of a sandbox that lets children
+              create nearly anything they want within it.
+            </p>
+            <section class="populargames">Popular Games:</section>
+            <section class="populargames--list">
+              <ul>
+                <li class="populargames--list--content">Minecraft</li>
+                <li class="populargames--list--content">Grand Theft Auto 5</li>
+                <li class="populargames--list--content">Scrapmechanic</li>
+              </ul>
+            </section>
+          </div>
         </section>
-        <section id="jumpnrun">
-          <h4>Jump'n'Run</h4>
-          <p>
-            A platform game (often simplified as a jump 'n' run game) is a
-            sub-genre of action video games in which the core objective is to
-            move the player character between points in an environment. Platform
-            games are characterized by levels that consist of uneven terrain and
-            suspended platforms of varying height that require jumping and
-            climbing to traverse. Other acrobatic maneuvers may factor into the
-            gameplay, such as swinging from vines or grappling hooks, jumping
-            off walls, air dashing, gliding through the air, being shot from
-            cannons, or bouncing from springboards or trampolines. Games where
-            jumping is automated completely, such as 3D games in The Legend of
-            Zelda series, fall outside of the genre.
-          </p>
-          <h5>Most popular "Jump'n'Run" games:</h5>
-          <section id="donkeykong">
-            <figure>
-              <figcaption>
-                <h5>Donkey Kong Country: Tropical Freeze</h5>
-              </figcaption>
-              <img
-                src="https://www.pcgames.de/screenshots/430x/2014/02/Donkey_Kong_Country_Tropical_Freeze_Test_Wii_U_Screenshots__9_-pc-games.jpg"
-                alt="donkeykong"
-              />
-            </figure>
-          </section>
-          <section id="ratchet">
-            <figure>
-              <figcaption>
-                <h5>Ratchet & Clank</h5>
-              </figcaption>
-              <img
-                src="https://www.pcgames.de/screenshots/430x/2015/06/ratchet_clank_ps4_4-pc-games.jpg"
-                alt="ratchet"
-              />
-            </figure>
-          </section>
-          <section id="meatboy">
-            <figure>
-              <figcaption>
-                <h5>Super Meat Boy</h5>
-              </figcaption>
-              <img
-                src="https://cdn.cloudflare.steamstatic.com/steam/apps/40800/header.jpg?t=1666140086"
-                alt="meatboy"
-              />
-            </figure>
-          </section>
+        <section id="jumpnrun" class="jumpnrun">
+          <button type="button" class="collapsible">
+            <strong>JUMP'N'RUN</strong>
+          </button>
+          <div class="content">
+            <p>
+              A platform game (often simplified as a jump 'n' run game) is a
+              sub-genre of action video games in which the core objective is to
+              move the player character between points in an environment.
+              Platform games are characterized by levels that consist of uneven
+              terrain and suspended platforms of varying height that require
+              jumping and climbing to traverse. Other acrobatic maneuvers may
+              factor into the gameplay, such as swinging from vines or grappling
+              hooks, jumping off walls, air dashing, gliding through the air,
+              being shot from cannons, or bouncing from springboards or
+              trampolines. Games where jumping is automated completely, such as
+              3D games in The Legend of Zelda series, fall outside of the genre.
+            </p>
+            <section class="populargames">Popular Games:</section>
+            <section class="populargames--list">
+              <ul>
+                <li class="populargames--list--content">Minecraft</li>
+                <li class="populargames--list--content">Grand Theft Auto 5</li>
+                <li class="populargames--list--content">Scrapmechanic</li>
+              </ul>
+            </section>
+          </div>
         </section>
-        <section id="rts">
-          <h4>Real-Time Strategy</h4>
-          <p>
-            Real-time strategy (RTS) is a subgenre of strategy video games that
-            do not progress incrementally in turns, but allow all players to
-            play simultaneously, in "real time". By contrast, in turn-based
-            strategy (TBS) games, players take turns to play. The term
-            "real-time strategy" was coined by Brett Sperry to market Dune II in
-            the early 1990s.
-          </p>
-          <h5>Most popular "RTS" games:</h5>
-          <section id="dota2">
-            <figure>
-              <figcaption>
-                <h5>DOTA 2</h5>
-              </figcaption>
-              <img
-                src="https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg?t=1666142991"
-                alt="dota2"
-              />
-            </figure>
-          </section>
-          <section id="warhammer3">
-            <figure>
-              <figcaption>
-                <h5>Warhammer III</h5>
-              </figcaption>
-              <img
-                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1142710/header.jpg?t=1666202367"
-                alt="warhammer3"
-              />
-            </figure>
-          </section>
-          <section id="aoe2">
-            <figure>
-              <figcaption>
-                <h5>Age of Empires II</h5>
-              </figcaption>
-              <img
-                src="https://cdn.cloudflare.steamstatic.com/steam/apps/813780/header.jpg?t=1666202570"
-                alt="aoe2"
-              />
-            </figure>
-          </section>
-          <!-- section des games endet hier-->
+
+        <section id="rts" class="rts">
+          <button type="button" class="collapsible">
+            <strong>Real Time Strategy</strong>
+          </button>
+          <div class="content">
+            <p>
+              Real-time strategy (RTS) is a subgenre of strategy video games
+              that do not progress incrementally in turns, but allow all players
+              to play simultaneously, in "real time". By contrast, in turn-based
+              strategy (TBS) games, players take turns to play. The term
+              "real-time strategy" was coined by Brett Sperry to market Dune II
+              in the early 1990s.
+            </p>
+            <section class="populargames">Popular Games:</section>
+            <section class="populargames--list">
+              <ul>
+                <li class="populargames--list--content">Minecraft</li>
+                <li class="populargames--list--content">Grand Theft Auto 5</li>
+                <li class="populargames--list--content">Scrapmechanic</li>
+              </ul>
+            </section>
+          </div>
         </section>
-        <!-- section der Kategorie endet hier-->
       </section>
       <!-- section der Kategoriensuche inkl. Nav endet hier-->
     </main>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
