@@ -16,6 +16,10 @@
   background-color: var(--maincolor);
 }
 
+main{
+  display: flex;
+}
+
 a {
   text-decoration: none;
 }
@@ -58,11 +62,12 @@ background-color: transparent;
 .nav {
   background-color: white;
   padding: 50px;
+  position:
+
+
 }
 
 .sandbox {
-  background-color: white;
   padding: 50px;
-  color: white;
 }
 /*a:hover*/
