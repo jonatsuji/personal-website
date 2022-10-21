@@ -55,9 +55,13 @@ margin-top: -35px;
 background-color: transparent;
 }
 
-#wikipart {
+.nav {
   background-color: white;
   padding: 50px;
 }
 
+.sandbox {
+  background-color: white;
+  padding: 50px;
+}
 /*a:hover*/
