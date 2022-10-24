@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/personal-website/base.css" />
+    <title>Arenaly</title>
+  </head>
+  <body>
+    <header>
+      <section class="boxheader">
+        <img
+          class="logo"
+          src="/personal-website/images/Untitled-2022-10-20-1829.png"
+          alt="logo"
+        />
+        <h1 class="mainheader">Arenaly</h1>
+        <h2 class="secondheader">Your own gamingWIKI</h2>
+      </section>
+    </header>
+    <main>
+      <section class="nav">
+        <!-- NAVIGATION  -->
+        <nav>
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>What is what?</li></a>
+              <a href="#"><li>Blog</li></a>
+              <a href="#"><li>Contact</li></a>
+            </ul>
+          </div>
+        </nav>
+        <!-- here -------------------------------------------------------------->
+      </section>
+      <section clas="dropdown--main">
+        <section class="subheader">
+          <h3>What is what?</h3>
+        </section>
+        <section id="sandbox" class="sandbox">
+          <button type="button" class="collapsible">
+            <strong>SANDBOX</strong>
+          </button>
+          <div class="content">
+            <p>
+              A <strong>sandbox</strong> game is a video game with a gameplay
+              element that provides the player a great degree of creativity to
+              interact with, usually without any predetermined goal, or
+              alternatively with a goal that the player sets for themselves.
+              Such games may lack any objective, and are sometimes referred to
+              as non-games or software toys. More often, sandbox games result
+              from these creative elements being incorporated into other genres
+              and allowing for emergent gameplay. Sandbox games are often
+              associated with an open world concept which gives the player
+              freedom of movement and progression in the game's world. The term
+              "sandbox" derives from the nature of a sandbox that lets children
+              create nearly anything they want within it.
+            </p>
+            <section class="populargames">Popular Games:</section>
+            <section class="populargames--list">
+              <ul>
+                <li class="populargames--list--content">Minecraft</li>
+                <li class="populargames--list--content">Grand Theft Auto 5</li>
+                <li class="populargames--list--content">Scrapmechanic</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+        <section id="jumpnrun" class="jumpnrun">
+          <button type="button" class="collapsible">
+            <strong>JUMP'N'RUN</strong>
+          </button>
+          <div class="content">
+            <p>
+              A platform game (often simplified as a jump 'n' run game) is a
+              sub-genre of action video games in which the core objective is to
+              move the player character between points in an environment.
+              Platform games are characterized by levels that consist of uneven
+              terrain and suspended platforms of varying height that require
+              jumping and climbing to traverse. Other acrobatic maneuvers may
+              factor into the gameplay, such as swinging from vines or grappling
+              hooks, jumping off walls, air dashing, gliding through the air,
+              being shot from cannons, or bouncing from springboards or
+              trampolines. Games where jumping is automated completely, such as
+              3D games in The Legend of Zelda series, fall outside of the genre.
+            </p>
+            <section class="populargames">Popular Games:</section>
+            <section class="populargames--list">
+              <ul>
+                <li class="populargames--list--content">
+                  Donkey Kong Country: Tropical Freeze
+                </li>
+                <li class="populargames--list--content">Ratchet & Clank</li>
+                <li class="populargames--list--content">Super Meat Boy</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section id="rts" class="rts">
+          <button type="button" class="collapsible">
+            <strong>Real Time Strategy</strong>
+          </button>
+          <div class="content">
+            <p>
+              Real-time strategy (RTS) is a subgenre of strategy video games
+              that do not progress incrementally in turns, but allow all players
+              to play simultaneously, in "real time". By contrast, in turn-based
+              strategy (TBS) games, players take turns to play. The term
+              "real-time strategy" was coined by Brett Sperry to market Dune II
+              in the early 1990s.
+            </p>
+            <section class="populargames">Popular Games:</section>
+            <section class="populargames--list">
+              <ul>
+                <li class="populargames--list--content">DOTA 2</li>
+                <li class="populargames--list--content">Hearts of Iron IV</li>
+                <li class="populargames--list--content">
+                  Total War: WARHAMMER III
+                </li>
+              </ul>
+            </section>
+          </div>
+        </section>
+      </section>
+      <!-- section der Kategoriensuche inkl. Nav endet hier-->
+    </main>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
